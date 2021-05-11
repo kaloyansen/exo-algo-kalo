@@ -12,12 +12,13 @@ class EX1:
 	"""
 	numax = 20
 	inum = []
+
 	def __init__(self):
 		i = 0
 		while i < self.numax:
 			num = input("enter a whole number {}/{}: ".format(i + 1, self.numax))
 			self.inum.append(num)
-			i +=1
+			i += 1
 		print('list all {}'.format(self.inum))
 		lpg, pos = self.calcul()
 		print('max = {}, pos[0] = {}'.format(lpg, pos))
@@ -79,8 +80,9 @@ class EX4:
 		n = input("le nombre de chevaux partants: ")
 		p = input("le nombre de chevaux joués: ")
 		x, y = self.chance(int(n), int(p))
-		print('dans l\'ordre: une chanse à gagner sur {}\ndans le désordre: une chance de gagner sur {}'.format(x, y))
-		
+		print('dans l\'ordre: une chanse à gagner sur {} = {:.2f}%'.format(x, 100./x))
+		print('dans le désordre: une chance de gagner sur {} = {:.2f}%'.format(y, 100./y))
+
 	def chance(self, n, p):
 		h = HELP()
 		x = h.factorielle(n)
@@ -124,7 +126,6 @@ class EX6:
 		print(word)
 		return word
 
-	
 class EX7:
 	"""
 	Ecrire un algorithme qui affiche la moyenne d’une suite d’entiers
@@ -138,7 +139,6 @@ class EX7:
 		for a in arr:
 			sum += a
 		return sum / len(arr)
-
 
 class EX8:
 	"""
@@ -178,12 +178,10 @@ class EX8:
 		max = self.max2(i3, i4)
 		return max
 
-
 class EX9:
 	""" 
 	Ecrire une action qui fournit les félicitations ou l’ajournement d’un élève suivant sa note en utilisant Si-alors-sinon.
 	"""
-
 	action = {2 : 'ajournement', 3 : 'ajournement', 4 : 'félicitations', 5 : 'félicitations', 6 : 'félicitations'}
 
 	def __init__(self, note = 4):
@@ -197,16 +195,16 @@ class EX9:
 
 
 
-#ex9 = EX9(3)
-#ex8 = EX8()
-#ex7 = EX7()
-#ex6 = EX6('beau', 'coup')
-#ex6.effacer('verylongword', 4, 5)
-#ex5 = EX5('vfdvdscds')	
-#ex4 = EX4()
+# ex9 = EX9(3)
+# ex8 = EX8()
+# ex7 = EX7()
+# ex6 = EX6('beau', 'coup')
+# ex6.effacer('verylongword', 4, 5)
+# ex5 = EX5('vfdvdscds')	
+# ex4 = EX4()
 ex3 = EX3()
-#ex2 = EX2()
-#ex1 = EX1()
+# ex2 = EX2()
+# ex1 = EX1()
 
 
 
