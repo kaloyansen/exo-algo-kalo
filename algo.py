@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 # Kaloyan Krastev Krastev, kaloyansen@gmail.com
 ###########################################################
-# je veux un cadeau si je suis le premier d'avoir programmé tous exercices  
 
 class EX1:
 	"""
